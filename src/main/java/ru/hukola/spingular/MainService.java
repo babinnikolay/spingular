@@ -22,4 +22,9 @@ public class MainService {
     public List<Product> findAll() {
         return new ArrayList<>(products);
     }
+
+    public Product create(Product product) {
+        products.add(product);
+        return product;
+    }
 }
